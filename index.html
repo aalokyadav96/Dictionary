@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover" id="viewport" name="viewport">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta content="noimageindex, noarchive" name="robots">
+    <meta content="yes" name="mobile-web-app-capable">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Barlow">
+</head>
+<style>
+    body {
+        font-family: "Barlow", -apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-weight: 400;
+        line-height: 1.6;
+        color: #000;
+        list-style-type: none;
+        border: 0;
+        outline: 0;
+        margin: 0;
+        padding: 0;
+        text-decoration: none;
+    }
+
+    * {
+        vertical-align: baseline;
+    }
+    *,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+</style>
+<style>
+    @media screen and (max-width: 600px) {}
+
+    @media screen and (max-width: 1199px) and (min-width: 601px) {}
+
+    @media screen and (min-width: 1200px) {
+        body::-webkit-scrollbar {
+            width: 12px;
+        }
+
+        body::-webkit-scrollbar-thumb {
+            background-color: #555;
+        }
+    }
+
+</style>
+<body>
+    <header>
+        
+        <h1>Dictionary</h1>
+        <div class="pages">
+            <li><a>Learn</a></li>
+            <li><a>Games</a></li>
+        </div>
+        <div>Profile</div>
+
+    </header>
+    <main>
+        <section class="statistics">
+            <form method="POST" class="homeform">
+                <div class="d3 " style="width:100%; ">
+                    <input name="text" class="search-field" placeholder="Finds anything">
+                    <label class="search-btn">
+                      <input type="submit" style="display:none">
+                      <svg class="srchicon" viewBox="0 0 24 24" width="100%" height="100%" role="img" stroke="#000000">
+                          <circle cx="11" cy="11" r="8"></circle>
+                          <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                      </svg>
+                    </label>
+                    </div>
+                <div class="selectcon">
+                    <label for="srclang">Language:</label>
+                    <select name="srclang">
+                        <option value="ad">Auto-Detect</option>
+                        <option value="hi">Hindi</option>
+                        <option value="en">English</option>
+                        <option value="ko">Korean</option>
+                        <option value="jp">Japanese</option>
+                        <option value="cn">Chinese</option>
+                    </select>
+                </div>
+                <div class="selectcon">
+                    <label for="language">To:</label>
+                    <select name="language">
+                        <option value="en">English</option>
+                        <option value="ko">Korean</option>
+                        <option value="jp">Japanese</option>
+                        <option value="hi">Hindi</option>
+                        <option value="cn">Chinese</option>
+                    </select>
+                </div>
+            </form>
+        </section>
+<section>
+    <article>
+    <h1>Trending words</h1>
+    <div class="chips">
+        <span>Nanomech</span>
+        <span>Airtrain</span>
+        <span>MossFire</span>
+        <span>Yuju</span>
+        <span>BlinkMacSystemFont</span>
+        <span>Aphrodite</span>
+        <span>Warkostz</span>
+    </div>
+    </article>
+
+    <article>
+        <h1>Word of the day</h1>
+            <div class="word">
+              <h3>rate</h3>
+            </div>
+            <p class="word-meaning">
+              a measure, quantity, or frequency, typically one measured against another quantity or measure.
+            </p>
+            <p class="word-example">the island has the lowest crime rate in the world</p>
+    </article>
+</section>
+    </main>    
+<footer>
+    <p>
+        Footer is necessary
+    </p>
+</footer>
+    {% include 'css.html' %}
+</body>
+</html>
